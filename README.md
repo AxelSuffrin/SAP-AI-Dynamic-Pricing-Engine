@@ -1,125 +1,139 @@
 # SAP-AI-Dynamic-Pricing-Engine
 AI-powered product recommendations and dynamic pricing for SAP e-commerce systems (Prototype)
 
-Overview
-This project demonstrates how e-commerce companies can leverage SAP's Generative AI Hub and SAP AI Core to implement personalized product recommendations and dynamic pricing strategies. It showcases a simulated integration with existing CRM systems to deliver AI-enhanced customer experiences.
+Overview 
 
-Important Note: This is a demonstration project intended for portfolio purposes and not a production-ready application. It simulates SAP's GenAI capabilities rather than connecting to actual SAP services.
+This project demonstrates how e-commerce companies can leverage SAP's Generative AI Hub and SAP AI Core to implement personalized product recommendations and dynamic pricing strategies. It showcases a simulated integration with existing CRM systems to deliver AI-enhanced customer experiences. 
 
-Key Features
-Personalized Product Recommendations: AI-generated product suggestions based on customer behavior and preferences
+Important Note: This is a demonstration project intended for portfolio purposes and not a production-ready application. It simulates SAP's GenAI capabilities rather than connecting to actual SAP services. 
 
-Dynamic Pricing Engine: Intelligent price calculations using multiple market and customer factors
+Key Features 
 
-Simulated CRM Integration: Demonstrates how the solution connects with existing customer data
+Personalized Product Recommendations: AI-generated product suggestions based on customer behavior and preferences 
 
-Interactive Web Interface: User-friendly dashboard for exploring AI capabilities
+Dynamic Pricing Engine: Intelligent price calculations using multiple market and customer factors 
 
-Technologies Demonstrated
-SAP Business Technology Platform (BTP)
+Simulated CRM Integration: Demonstrates how the solution connects with existing customer data 
 
-SAP Generative AI Hub
+Interactive Web Interface: User-friendly dashboard for exploring AI capabilities 
 
-SAP AI Core
+Technologies Demonstrated 
 
-Python Flask
+- SAP Business Technology Platform (BTP) 
 
-AI-based recommendation algorithms
+- SAP Generative AI Hub 
 
-Dynamic pricing models
+- SAP AI Core 
 
-Pricing Factors Explained
-The dynamic pricing engine uses five key factors to calculate optimal pricing:
+- Python Flask 
 
-Inventory Factor: Reflects how current stock levels influence pricing
+- AI-based recommendation algorithms 
 
-Value = 1: Neutral impact (optimal inventory levels)
+- Dynamic pricing models 
 
-Value > 1: Low inventory suggesting higher prices due to scarcity
+Pricing Factors Explained :
 
-Value < 1: High inventory suggesting discounts to increase sales velocity
+The dynamic pricing engine uses five key factors to calculate optimal pricing: 
 
-Market Position Factor: Indicates positioning relative to competitor pricing
+Inventory Factor: Reflects how current stock levels influence pricing 
 
-Value = 1: Aligned with market average pricing
+Value = 1: Neutral impact (optimal inventory levels) 
 
-Value > 1: Premium positioning above market average
+Value > 1: Low inventory suggesting higher prices due to scarcity 
 
-Value < 1: Competitive positioning below market average
+Value < 1: High inventory suggesting discounts to increase sales velocity 
 
-Demand Factor: Measures current market demand for the product
+Market Position Factor: Indicates positioning relative to competitor pricing 
 
-Value = 1: Average demand with no adjustment
+Value = 1: Aligned with market average pricing 
 
-Value > 1: High demand supporting price increases (e.g., 1.21 = 21% increase)
+Value > 1: Premium positioning above market average 
 
-Value < 1: Low demand requiring price reductions
+Value < 1: Competitive positioning below market average 
 
-Customer Factor: Adjusts pricing based on customer segment
+Demand Factor: Measures current market demand for the product 
 
-Value = 1: Standard pricing for typical customers
+Value = 1: Average demand with no adjustment 
 
-Value > 1: Premium customers may see higher prices for exclusive offerings
+Value > 1: High demand supporting price increases (e.g., 1.21 = 21% increase) 
 
-Value < 1: Budget segment customers receive discounts (e.g., 0.93 = 7% discount)
+Value < 1: Low demand requiring price reductions 
 
-Seasonal Factor: Accounts for seasonal demand variations
+Customer Factor: Adjusts pricing based on customer segment 
 
-Value = 1: No seasonal impact
+Value = 1: Standard pricing for typical customers 
 
-Value > 1: In-season products can command higher prices
+Value > 1: Premium customers may see higher prices for exclusive offerings 
 
-Value < 1: Off-season products require discounting
+Value < 1: Budget segment customers receive discounts (e.g., 0.93 = 7% discount) 
 
-Installation
-bash
-# Clone the repository
-git clone https://github.com/yourusername/SAP-GenAI-Commerce-Suite.git
+Seasonal Factor: Accounts for seasonal demand variations 
 
-# Navigate to the project directory
-cd SAP-GenAI-Commerce-Suite
+Value = 1: No seasonal impact 
 
-# Install dependencies
-pip install -r requirements.txt
+Value > 1: In-season products can command higher prices 
 
-# Run the application
-python app.py
-Usage
-After starting the application, navigate to http://localhost:5000 to access the dashboard. From there you can:
+Value < 1: Off-season products require discounting 
 
-Try the recommendation engine by selecting different customer profiles
+Installation 
 
-Experiment with dynamic pricing by selecting various products and customers
+# Clone the repository 
+git clone https://github.com/yourusername/SAP-GenAI-Commerce-Suite.git 
+ 
+# Navigate to the project directory 
+cd SAP-GenAI-Commerce-Suite 
+ 
+# Install dependencies 
+pip install -r requirements.txt 
+ 
+# Run the application 
+python app.py 
+ 
 
-See how the AI explains its decision-making process
+Usage 
 
-Project Structure
-text
-SAP-GenAI-Commerce-Suite/
-├── app.py                  # Main Flask application
-├── mock/                   # Mock data generators
-│   └── sap_mock.py         # SAP data simulation
-├── genai/                  # AI components
-│   ├── recommendation.py   # Recommendation engine
-│   └── pricing.py          # Dynamic pricing engine
-├── templates/              # Web interface
-│   ├── index.html
-│   ├── recommendations.html
-│   └── pricing.html
-└── data/                   # Generated mock data
-Limitations
-This project is a simulation for demonstration purposes and has several limitations:
+After starting the application, navigate to http://localhost:5000 to access the dashboard. From there you can: 
 
-Uses simulated AI decision-making rather than actual SAP AI services
+Try the recommendation engine by selecting different customer profiles 
 
-Works with generated mock data instead of real customer/product data
+Experiment with dynamic pricing by selecting various products and customers 
 
-Not optimized for production deployment or large-scale use
+See how the AI explains its decision-making process 
 
-Development Process
-This project was developed as a portfolio demonstration of SAP GenAI implementation skills. AI assistance (primarily through large language models) was used in the development process to generate code, design the application structure, and create the user interface. This collaborative approach mirrors modern development practices where AI tools augment developer capabilities.
+Project Structure 
 
-License
-MIT License
+SAP-GenAI-Commerce-Suite/ 
+├── app.py                  # Main Flask application 
+├── mock/                   # Mock data generators 
+│   └── sap_mock.py         # SAP data simulation 
+├── genai/                  # AI components 
+│   ├── recommendation.py   # Recommendation engine 
+│   └── pricing.py          # Dynamic pricing engine 
+├── templates/              # Web interface 
+│   ├── index.html 
+│   ├── recommendations.html 
+│   └── pricing.html 
+└── data/                   # Generated mock data 
+ 
 
-This project is not affiliated with or endorsed by SAP SE. All SAP product names are trademarks or registered trademarks of SAP SE or its affiliates.
+Limitations 
+
+This project is a simulation for demonstration purposes and has several limitations: 
+
+Uses simulated AI decision-making rather than actual SAP AI services 
+
+Works with generated mock data instead of real customer/product data 
+
+Not optimized for production deployment or large-scale use 
+
+Development Process 
+
+This project was developed as a portfolio demonstration of SAP GenAI implementation skills. AI assistance (primarily through large language models) was used in the development process to generate code, design the application structure, and create the user interface. This collaborative approach mirrors modern development practices where AI tools augment developer capabilities. 
+
+License 
+
+MIT License 
+
+Forme 
+
+This project is not affiliated with or endorsed by SAP SE. All SAP product names are trademarks or registered trademarks of SAP SE or its affiliates. 
