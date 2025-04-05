@@ -78,7 +78,7 @@ Value < 1: Off-season products require discounting
 Installation 
 
 # Clone the repository 
-git clone https://github.com/yourusername/SAP-GenAI-Commerce-Suite.git 
+git clone https://github.com/AxelSuffrin/SAP-GenAI-Commerce-Suite.git 
  
 # Navigate to the project directory 
 cd SAP-GenAI-Commerce-Suite 
