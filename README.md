@@ -100,21 +100,6 @@ Experiment with dynamic pricing by selecting various products and customers
 
 See how the AI explains its decision-making process 
 
-Project Structure 
-
-SAP-GenAI-Commerce-Suite/ 
-├── app.py                  # Main Flask application 
-├── mock/                   # Mock data generators 
-│   └── sap_mock.py         # SAP data simulation 
-├── genai/                  # AI components 
-│   ├── recommendation.py   # Recommendation engine 
-│   └── pricing.py          # Dynamic pricing engine 
-├── templates/              # Web interface 
-│   ├── index.html 
-│   ├── recommendations.html 
-│   └── pricing.html 
-└── data/                   # Generated mock data 
- 
 
 Limitations 
 
