@@ -1,7 +1,5 @@
 # SAP-AI-Dynamic-Pricing-Engine
 AI-powered product recommendations and dynamic pricing for SAP e-commerce systems (Prototype)
-SAP-GenAI-Commerce-Suite
-AI-powered product recommendations and dynamic pricing for SAP e-commerce systems
 
 Overview
 This project demonstrates how e-commerce companies can leverage SAP's Generative AI Hub and SAP AI Core to implement personalized product recommendations and dynamic pricing strategies. It showcases a simulated integration with existing CRM systems to deliver AI-enhanced customer experiences.
