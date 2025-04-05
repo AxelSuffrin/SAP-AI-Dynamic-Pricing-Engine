@@ -1,0 +1,502 @@
+[
+  {
+    "product_id": "PROD1000",
+    "name": "Will Home",
+    "category": "Home",
+    "base_price": 777.26,
+    "current_stock": 186,
+    "reorder_level": 39,
+    "supplier_id": "SUPP109",
+    "description": "Without everyone doctor. Send popular one south."
+  },
+  {
+    "product_id": "PROD1001",
+    "name": "Dream Book",
+    "category": "Books",
+    "base_price": 742.65,
+    "current_stock": 148,
+    "reorder_level": 33,
+    "supplier_id": "SUPP108",
+    "description": "Despite skill your during bank seek. Imagine doctor personal author well box ability scene. Bad able painting young memory."
+  },
+  {
+    "product_id": "PROD1002",
+    "name": "They Book",
+    "category": "Books",
+    "base_price": 508.38,
+    "current_stock": 456,
+    "reorder_level": 39,
+    "supplier_id": "SUPP116",
+    "description": "Agreement begin ask policy marriage issue back. Kitchen everyone but government still see time. Detail school what east bag. Fill while share quality you class door."
+  },
+  {
+    "product_id": "PROD1003",
+    "name": "International Electronic",
+    "category": "Electronics",
+    "base_price": 238.96,
+    "current_stock": 416,
+    "reorder_level": 50,
+    "supplier_id": "SUPP114",
+    "description": "Left ball something we. Buy kind finally measure any detail itself foot."
+  },
+  {
+    "product_id": "PROD1004",
+    "name": "Magazine Home",
+    "category": "Home",
+    "base_price": 905.39,
+    "current_stock": 143,
+    "reorder_level": 38,
+    "supplier_id": "SUPP109",
+    "description": "Ground but house fish speech. Human city beat whose."
+  },
+  {
+    "product_id": "PROD1005",
+    "name": "Thousand Book",
+    "category": "Books",
+    "base_price": 462.05,
+    "current_stock": 303,
+    "reorder_level": 30,
+    "supplier_id": "SUPP112",
+    "description": "Leave single truth outside. During yes win."
+  },
+  {
+    "product_id": "PROD1006",
+    "name": "Coach Home",
+    "category": "Home",
+    "base_price": 758.52,
+    "current_stock": 123,
+    "reorder_level": 43,
+    "supplier_id": "SUPP112",
+    "description": "Administration him interest cut trip program. Trade into glass."
+  },
+  {
+    "product_id": "PROD1007",
+    "name": "Local Clothing",
+    "category": "Clothing",
+    "base_price": 164.49,
+    "current_stock": 111,
+    "reorder_level": 35,
+    "supplier_id": "SUPP101",
+    "description": "Cold open what. Goal law international this couple position western over."
+  },
+  {
+    "product_id": "PROD1008",
+    "name": "Involve Electronic",
+    "category": "Electronics",
+    "base_price": 955.87,
+    "current_stock": 331,
+    "reorder_level": 44,
+    "supplier_id": "SUPP110",
+    "description": "Magazine water land community quickly talk for. Board report type long prevent. Kid catch wait enter participant kind large."
+  },
+  {
+    "product_id": "PROD1009",
+    "name": "Couple Clothing",
+    "category": "Clothing",
+    "base_price": 759.68,
+    "current_stock": 164,
+    "reorder_level": 37,
+    "supplier_id": "SUPP112",
+    "description": "Head head field all or back must. Those usually fight improve."
+  },
+  {
+    "product_id": "PROD1010",
+    "name": "Peace Sport",
+    "category": "Sports",
+    "base_price": 611.61,
+    "current_stock": 416,
+    "reorder_level": 45,
+    "supplier_id": "SUPP115",
+    "description": "Affect seem modern wrong affect military interesting charge. Hit bad family suffer plant. Throughout really tell especially."
+  },
+  {
+    "product_id": "PROD1011",
+    "name": "North Book",
+    "category": "Books",
+    "base_price": 754.08,
+    "current_stock": 488,
+    "reorder_level": 46,
+    "supplier_id": "SUPP109",
+    "description": "Security the your significant course. Again put under much model actually. What fish watch doctor visit."
+  },
+  {
+    "product_id": "PROD1012",
+    "name": "Eye Food",
+    "category": "Food",
+    "base_price": 639.83,
+    "current_stock": 48,
+    "reorder_level": 21,
+    "supplier_id": "SUPP119",
+    "description": "Four fear campaign increase consider claim. Walk suggest official over probably machine. But them media close seven season."
+  },
+  {
+    "product_id": "PROD1013",
+    "name": "Specific Book",
+    "category": "Books",
+    "base_price": 607.64,
+    "current_stock": 94,
+    "reorder_level": 45,
+    "supplier_id": "SUPP104",
+    "description": "College require bag poor same. Guess for night show."
+  },
+  {
+    "product_id": "PROD1014",
+    "name": "Statement Home",
+    "category": "Home",
+    "base_price": 996.58,
+    "current_stock": 215,
+    "reorder_level": 29,
+    "supplier_id": "SUPP110",
+    "description": "Wind attorney serious meet beautiful project. Best on we capital."
+  },
+  {
+    "product_id": "PROD1015",
+    "name": "Some Electronic",
+    "category": "Electronics",
+    "base_price": 174.02,
+    "current_stock": 455,
+    "reorder_level": 47,
+    "supplier_id": "SUPP115",
+    "description": "My radio something sit look later crime. Somebody coach chance structure system. Show station increase nature difference."
+  },
+  {
+    "product_id": "PROD1016",
+    "name": "Property Clothing",
+    "category": "Clothing",
+    "base_price": 978.52,
+    "current_stock": 397,
+    "reorder_level": 50,
+    "supplier_id": "SUPP106",
+    "description": "Education popular popular. Put else just. Pretty identify head theory wonder."
+  },
+  {
+    "product_id": "PROD1017",
+    "name": "Garden Home",
+    "category": "Home",
+    "base_price": 660.64,
+    "current_stock": 151,
+    "reorder_level": 48,
+    "supplier_id": "SUPP109",
+    "description": "Health current road top together. Southern capital there space ready."
+  },
+  {
+    "product_id": "PROD1018",
+    "name": "Student Book",
+    "category": "Books",
+    "base_price": 172.54,
+    "current_stock": 43,
+    "reorder_level": 29,
+    "supplier_id": "SUPP119",
+    "description": "Dog media fear beyond where time. Group billion woman use hope morning blood. City capital election interview."
+  },
+  {
+    "product_id": "PROD1019",
+    "name": "Star Book",
+    "category": "Books",
+    "base_price": 857.73,
+    "current_stock": 19,
+    "reorder_level": 22,
+    "supplier_id": "SUPP113",
+    "description": "Actually class full thousand standard glass purpose."
+  },
+  {
+    "product_id": "PROD1020",
+    "name": "Ten Electronic",
+    "category": "Electronics",
+    "base_price": 504.98,
+    "current_stock": 133,
+    "reorder_level": 38,
+    "supplier_id": "SUPP111",
+    "description": "New will its treatment up decide crime. Yard wide ever his pull doctor majority. Seem human attention show in game from."
+  },
+  {
+    "product_id": "PROD1021",
+    "name": "Perhaps Sport",
+    "category": "Sports",
+    "base_price": 98.43,
+    "current_stock": 284,
+    "reorder_level": 29,
+    "supplier_id": "SUPP103",
+    "description": "Clearly begin chair example west trial whose. Admit TV dream may group argue every."
+  },
+  {
+    "product_id": "PROD1022",
+    "name": "Could Clothing",
+    "category": "Clothing",
+    "base_price": 974.39,
+    "current_stock": 118,
+    "reorder_level": 36,
+    "supplier_id": "SUPP119",
+    "description": "Door allow adult popular begin. Writer again Mrs service knowledge. Person environment president product best put get."
+  },
+  {
+    "product_id": "PROD1023",
+    "name": "Various Clothing",
+    "category": "Clothing",
+    "base_price": 161.4,
+    "current_stock": 439,
+    "reorder_level": 33,
+    "supplier_id": "SUPP114",
+    "description": "Kind sit foreign threat natural behind. Spend how fill own care. List keep herself traditional almost operation hair."
+  },
+  {
+    "product_id": "PROD1024",
+    "name": "Serve Food",
+    "category": "Food",
+    "base_price": 257.28,
+    "current_stock": 377,
+    "reorder_level": 25,
+    "supplier_id": "SUPP111",
+    "description": "Discussion threat possible name. Since like third author pattern. Provide camera attack push shoulder."
+  },
+  {
+    "product_id": "PROD1025",
+    "name": "Type Home",
+    "category": "Home",
+    "base_price": 688.36,
+    "current_stock": 180,
+    "reorder_level": 48,
+    "supplier_id": "SUPP102",
+    "description": "After stock this car prepare. Together film space relate house base."
+  },
+  {
+    "product_id": "PROD1026",
+    "name": "Might Electronic",
+    "category": "Electronics",
+    "base_price": 536.13,
+    "current_stock": 148,
+    "reorder_level": 45,
+    "supplier_id": "SUPP119",
+    "description": "Rise operation cell fight soldier use. Development fly standard agree."
+  },
+  {
+    "product_id": "PROD1027",
+    "name": "Race Home",
+    "category": "Home",
+    "base_price": 242.55,
+    "current_stock": 141,
+    "reorder_level": 48,
+    "supplier_id": "SUPP115",
+    "description": "This newspaper reach write animal. Dog foot result own pick charge everybody. Here improve culture half special total."
+  },
+  {
+    "product_id": "PROD1028",
+    "name": "Simple Book",
+    "category": "Books",
+    "base_price": 523.4,
+    "current_stock": 203,
+    "reorder_level": 31,
+    "supplier_id": "SUPP111",
+    "description": "As minute leave continue least national ready drop. Movie home central small."
+  },
+  {
+    "product_id": "PROD1029",
+    "name": "Any Home",
+    "category": "Home",
+    "base_price": 598.16,
+    "current_stock": 100,
+    "reorder_level": 20,
+    "supplier_id": "SUPP113",
+    "description": "Glass want challenge act board. Court president later risk benefit baby act. Set case TV."
+  },
+  {
+    "product_id": "PROD1030",
+    "name": "Ask Home",
+    "category": "Home",
+    "base_price": 939.8,
+    "current_stock": 295,
+    "reorder_level": 45,
+    "supplier_id": "SUPP107",
+    "description": "White may say analysis population report. Change black little research audience someone. Return turn these."
+  },
+  {
+    "product_id": "PROD1031",
+    "name": "System Food",
+    "category": "Food",
+    "base_price": 657.59,
+    "current_stock": 111,
+    "reorder_level": 33,
+    "supplier_id": "SUPP120",
+    "description": "Receive executive make staff yard bring stage. Woman task so difficult work."
+  },
+  {
+    "product_id": "PROD1032",
+    "name": "Almost Clothing",
+    "category": "Clothing",
+    "base_price": 55.79,
+    "current_stock": 202,
+    "reorder_level": 21,
+    "supplier_id": "SUPP120",
+    "description": "Bar analysis attention pass moment. Rate beyond personal pick key toward lay lawyer."
+  },
+  {
+    "product_id": "PROD1033",
+    "name": "As Electronic",
+    "category": "Electronics",
+    "base_price": 685.82,
+    "current_stock": 71,
+    "reorder_level": 47,
+    "supplier_id": "SUPP114",
+    "description": "Beat movement at serve. Scene quickly computer before. Something Mr for bill indicate chair quickly else."
+  },
+  {
+    "product_id": "PROD1034",
+    "name": "Have Food",
+    "category": "Food",
+    "base_price": 718.78,
+    "current_stock": 167,
+    "reorder_level": 31,
+    "supplier_id": "SUPP118",
+    "description": "Shoulder already television claim thus avoid. Need population wall media record much. Coach bank small somebody wind."
+  },
+  {
+    "product_id": "PROD1035",
+    "name": "Indeed Food",
+    "category": "Food",
+    "base_price": 10.89,
+    "current_stock": 403,
+    "reorder_level": 46,
+    "supplier_id": "SUPP103",
+    "description": "Current above small gun crime meeting value. Sister sure go long."
+  },
+  {
+    "product_id": "PROD1036",
+    "name": "Move Food",
+    "category": "Food",
+    "base_price": 503.13,
+    "current_stock": 321,
+    "reorder_level": 42,
+    "supplier_id": "SUPP113",
+    "description": "Benefit speak store hold serious wait class. Site probably generation Mrs kid effect hair. Child institution cut sing training significant. Fast argue wait dinner least."
+  },
+  {
+    "product_id": "PROD1037",
+    "name": "Model Home",
+    "category": "Home",
+    "base_price": 689.99,
+    "current_stock": 256,
+    "reorder_level": 19,
+    "supplier_id": "SUPP119",
+    "description": "Until will result street air. Push enter push never. If attention remain performance bed. Value blue development concern serious nature blood."
+  },
+  {
+    "product_id": "PROD1038",
+    "name": "Series Electronic",
+    "category": "Electronics",
+    "base_price": 58.37,
+    "current_stock": 120,
+    "reorder_level": 40,
+    "supplier_id": "SUPP108",
+    "description": "Could soon spring. The partner almost boy."
+  },
+  {
+    "product_id": "PROD1039",
+    "name": "Large Book",
+    "category": "Books",
+    "base_price": 606.81,
+    "current_stock": 281,
+    "reorder_level": 14,
+    "supplier_id": "SUPP111",
+    "description": "Enter contain successful. Up among late employee billion peace town."
+  },
+  {
+    "product_id": "PROD1040",
+    "name": "Range Electronic",
+    "category": "Electronics",
+    "base_price": 290.02,
+    "current_stock": 197,
+    "reorder_level": 40,
+    "supplier_id": "SUPP118",
+    "description": "Present know girl popular."
+  },
+  {
+    "product_id": "PROD1041",
+    "name": "Former Clothing",
+    "category": "Clothing",
+    "base_price": 286.26,
+    "current_stock": 309,
+    "reorder_level": 24,
+    "supplier_id": "SUPP109",
+    "description": "Chair professional economy remember interview. Teacher also else rate. Happy manager list guy party decide bit."
+  },
+  {
+    "product_id": "PROD1042",
+    "name": "Station Clothing",
+    "category": "Clothing",
+    "base_price": 443.11,
+    "current_stock": 416,
+    "reorder_level": 35,
+    "supplier_id": "SUPP115",
+    "description": "Pm shoulder west fact. Practice service cultural remain spend. Section her customer make professor task."
+  },
+  {
+    "product_id": "PROD1043",
+    "name": "Home Home",
+    "category": "Home",
+    "base_price": 637.78,
+    "current_stock": 413,
+    "reorder_level": 48,
+    "supplier_id": "SUPP116",
+    "description": "Bill wear true. Decide way father sea structure run."
+  },
+  {
+    "product_id": "PROD1044",
+    "name": "Voice Home",
+    "category": "Home",
+    "base_price": 684.89,
+    "current_stock": 291,
+    "reorder_level": 20,
+    "supplier_id": "SUPP102",
+    "description": "Among window son loss yes remain family step. Attack think enough already executive interesting condition."
+  },
+  {
+    "product_id": "PROD1045",
+    "name": "Production Food",
+    "category": "Food",
+    "base_price": 457.09,
+    "current_stock": 482,
+    "reorder_level": 41,
+    "supplier_id": "SUPP107",
+    "description": "Really car last rise call war. Actually military yes middle create somebody."
+  },
+  {
+    "product_id": "PROD1046",
+    "name": "Cell Clothing",
+    "category": "Clothing",
+    "base_price": 925.57,
+    "current_stock": 469,
+    "reorder_level": 35,
+    "supplier_id": "SUPP103",
+    "description": "Rather machine agency."
+  },
+  {
+    "product_id": "PROD1047",
+    "name": "Key Book",
+    "category": "Books",
+    "base_price": 143.32,
+    "current_stock": 151,
+    "reorder_level": 18,
+    "supplier_id": "SUPP118",
+    "description": "After catch pattern case safe meet sure. Example whose would article building task imagine."
+  },
+  {
+    "product_id": "PROD1048",
+    "name": "Case Sport",
+    "category": "Sports",
+    "base_price": 383.59,
+    "current_stock": 128,
+    "reorder_level": 12,
+    "supplier_id": "SUPP113",
+    "description": "However suffer manager catch sing reflect fly. Tell run tend draw."
+  },
+  {
+    "product_id": "PROD1049",
+    "name": "Father Electronic",
+    "category": "Electronics",
+    "base_price": 295.61,
+    "current_stock": 22,
+    "reorder_level": 28,
+    "supplier_id": "SUPP113",
+    "description": "Economy fill try. Man hand every dark hand."
+  }
+]

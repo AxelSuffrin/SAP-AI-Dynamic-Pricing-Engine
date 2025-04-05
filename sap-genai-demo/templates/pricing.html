@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAP GenAI Dynamic Pricing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        :root {
+            --sap-blue: #0070f2;
+            --sap-dark-blue: #0050b3;
+            --sap-light-grey: #f7f7f7;
+            --sap-border: #e5e5e5;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: var(--sap-blue);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: 600;
+        }
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--sap-border);
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: var(--sap-blue);
+            border-color: var(--sap-blue);
+        }
+        .btn-primary:hover {
+            background-color: var(--sap-dark-blue);
+            border-color: var(--sap-dark-blue);
+        }
+        .page-header {
+            background-color: white;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--sap-border);
+        }
+        .pricing-header {
+            background-color: var(--sap-light-grey);
+            padding: 1rem;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 1px solid var(--sap-border);
+        }
+        .base-price {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .dynamic-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--sap-dark-blue);
+            margin: 1rem 0;
+        }
+        .pricing-factor {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--sap-border);
+        }
+        .pricing-factor:last-child {
+            border-bottom: none;
+        }
+        .factor-name {
+            font-weight: 500;
+        }
+        .factor-value {
+            font-weight: 600;
+        }
+        .factor-positive {
+            color: #28a745;
+        }
+        .factor-negative {
+            color: #dc3545;
+        }
+        .factor-neutral {
+            color: #6c757d;
+        }
+        .explanation-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--sap-blue);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .segment-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+            background-color: rgba(0, 112, 242, 0.1);
+            color: var(--sap-blue);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">SAP GenAI Demo</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link text-white" href="/recommendations">Recommendations</a>
+                <a class="nav-link text-white" href="/pricing">Dynamic Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Dynamic Pricing with SAP GenAI</h1>
+            <p class="text-muted">Using SAP AI Core to compute optimal pricing based on market conditions and customer attributes</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Calculate Personalized Price</h5>
+                        <p class="text-muted">Select a product and customer to generate a dynamic price based on market conditions and customer profile.</p>
+                        <form id="pricingForm" class="row g-3">
+                            <div class="col-md-5">
+                                <label for="productSelect">Select Product:</label>
+                                <select class="form-control" id="productSelect" name="product_id">
+                                    {% for product in products %}
+                                    <option value="{{ product.product_id }}" {% if product.product_id == current_product_id %}selected{% endif %}>
+                                        {{ product.product_id }} - {{ product.name }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="customerSelect">Select Customer:</label>
+                                <select class="form-control" id="customerSelect" name="customer_id">
+                                    {% for customer in customers %}
+                                    <option value="{{ customer.customer_id }}" {% if customer.customer_id == current_customer_id %}selected{% endif %}>
+                                        {{ customer.customer_id }} - {{ customer.first_name }} {{ customer.last_name }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-2 d-flex align-items-end">
+                                <button type="submit" class="btn btn-primary w-100">Calculate Price</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5>How It Works</h5>
+                        <p class="small">SAP's AI Core analyzes multiple factors including inventory levels, market conditions, customer segments, and competitor pricing to generate optimal dynamic pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results">
+            <!-- Pricing results will be displayed here -->
+        </div>
+        
+        <footer class="mt-5 mb-4 text-center text-muted">
+            <p>SAP GenAI E-commerce Demo - Powered by SAP Business Technology Platform</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('pricingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const productId = document.getElementById('productSelect').value;
+            const customerId = document.getElementById('customerSelect').value;
+            
+            fetch(`/api/pricing/${productId}/${customerId}`)
+                .then(response => response.json())
+                .then(data => {
+                    let factorClass = (value) => {
+                        if (value > 1.0) return "factor-positive";
+                        if (value < 1.0) return "factor-negative";
+                        return "factor-neutral";
+                    };
+                
+                    let html = `
+                        <div class="card">
+                            <div class="pricing-header">
+                                <h2>${data.product_name}</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="base-price">Base Price: $${data.base_price.toFixed(2)}</div>
+                                        <div class="dynamic-price">$${data.dynamic_price.toFixed(2)}</div>
+                                        <div>For customer segment: <span class="segment-badge">${data.customer_segment}</span></div>
+                                        
+                                        <div class="explanation-box mt-4">
+                                            <h5>Price Explanation</h5>
+                                            <p>${data.explanation.replace(/\n/g, '<br>')}</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="mb-0">Pricing Factors</h5>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="pricing-factor">
+                                                    <span class="factor-name">Inventory Factor</span>
+                                                    <span class="factor-value ${factorClass(data.pricing_factors.inventory_factor)}">${data.pricing_factors.inventory_factor}</span>
+                                                </div>
+                                                <div class="pricing-factor">
+                                                    <span class="factor-name">Market Position Factor</span>
+                                                    <span class="factor-value ${factorClass(data.pricing_factors.market_position_factor)}">${data.pricing_factors.market_position_factor}</span>
+                                                </div>
+                                                <div class="pricing-factor">
+                                                    <span class="factor-name">Demand Factor</span>
+                                                    <span class="factor-value ${factorClass(data.pricing_factors.demand_factor)}">${data.pricing_factors.demand_factor}</span>
+                                                </div>
+                                                <div class="pricing-factor">
+                                                    <span class="factor-name">Customer Factor</span>
+                                                    <span class="factor-value ${factorClass(data.pricing_factors.customer_factor)}">${data.pricing_factors.customer_factor}</span>
+                                                </div>
+                                                <div class="pricing-factor">
+                                                    <span class="factor-name">Seasonal Factor</span>
+                                                    <span class="factor-value ${factorClass(data.pricing_factors.seasonal_factor)}">${data.pricing_factors.seasonal_factor}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card mt-3">
+                                            <div class="card-header">
+                                                <h5 class="mb-0">Market Comparison</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span>Competitor Average:</span>
+                                                    <span class="fw-bold">$${((data.base_price * 0.85 + data.base_price * 1.15 + data.base_price * 0.9) / 3).toFixed(2)}</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <span>Price Advantage:</span>
+                                                    <span class="fw-bold text-success">${((1 - (data.dynamic_price / data.base_price)) * 100).toFixed(1)}% lower</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    document.getElementById('results').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error fetching pricing data:', error);
+                    alert('Error loading pricing data. Please try again.');
+                });
+        });
+    </script>
+</body>
+</html>
