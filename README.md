@@ -9,70 +9,52 @@ Important Note: This is a demonstration project intended for portfolio purposes 
 
 Key Features 
 
-Personalized Product Recommendations: AI-generated product suggestions based on customer behavior and preferences 
-
-Dynamic Pricing Engine: Intelligent price calculations using multiple market and customer factors 
-
-Simulated CRM Integration: Demonstrates how the solution connects with existing customer data 
-
-Interactive Web Interface: User-friendly dashboard for exploring AI capabilities 
+- Personalized Product Recommendations: AI-generated product suggestions based on customer behavior and preferences 
+- Dynamic Pricing Engine: Intelligent price calculations using multiple market and customer factors 
+- Simulated CRM Integration: Demonstrates how the solution connects with existing customer data 
+- Interactive Web Interface: User-friendly dashboard for exploring AI capabilities 
 
 Technologies Demonstrated 
 
 - SAP Business Technology Platform (BTP) 
-
 - SAP Generative AI Hub 
-
 - SAP AI Core 
-
 - Python Flask 
-
 - AI-based recommendation algorithms 
-
 - Dynamic pricing models 
 
 Pricing Factors Explained :
 
 The dynamic pricing engine uses five key factors to calculate optimal pricing: 
 
-Inventory Factor: Reflects how current stock levels influence pricing 
+- Inventory Factor: Reflects how current stock levels influence pricing 
 
 Value = 1: Neutral impact (optimal inventory levels) 
-
 Value > 1: Low inventory suggesting higher prices due to scarcity 
-
 Value < 1: High inventory suggesting discounts to increase sales velocity 
 
-Market Position Factor: Indicates positioning relative to competitor pricing 
+- Market Position Factor: Indicates positioning relative to competitor pricing 
 
 Value = 1: Aligned with market average pricing 
-
 Value > 1: Premium positioning above market average 
-
 Value < 1: Competitive positioning below market average 
 
 Demand Factor: Measures current market demand for the product 
 
 Value = 1: Average demand with no adjustment 
-
 Value > 1: High demand supporting price increases (e.g., 1.21 = 21% increase) 
-
 Value < 1: Low demand requiring price reductions 
 
-Customer Factor: Adjusts pricing based on customer segment 
+- Customer Factor: Adjusts pricing based on customer segment 
 
 Value = 1: Standard pricing for typical customers 
-
 Value > 1: Premium customers may see higher prices for exclusive offerings 
-
 Value < 1: Budget segment customers receive discounts (e.g., 0.93 = 7% discount) 
 
-Seasonal Factor: Accounts for seasonal demand variations 
+- Seasonal Factor: Accounts for seasonal demand variations 
 
 Value = 1: No seasonal impact 
-
 Value > 1: In-season products can command higher prices 
-
 Value < 1: Off-season products require discounting 
 
 Installation 
